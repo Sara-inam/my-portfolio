@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Raaziya | Full Stack Developer",
+  title: "Sara | Full Stack Developer",
   description: "Portfolio of Full Stack Developer",
 };
 
