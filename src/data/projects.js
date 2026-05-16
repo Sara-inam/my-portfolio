@@ -48,5 +48,37 @@ export const projects = [
   live: "https://sara-allied-axis.vercel.app/",
   code: "https://github.com/Sara-inam/AlliedAxis.git",
   tech: "Next.js, React, API Routes, Tailwind CSS"
+},
+{
+  title: "Iris Flower Classification & Machine Learning Data Analysis",
+  desc: "An end-to-end data analysis and Machine Learning project on the classic Iris dataset. Performed data exploration, visualization, and pattern analysis to understand feature relationships and species classification insights using Python data science stack.",
+  image: "/projects/iris.png",
+  live: "",
+  code: "https://github.com/Sara-inam/DeveloperHub-Coperation/tree/main/iris-data-analysis",
+  tech: "Python, Pandas, Matplotlib, Seaborn, Data Analysis, Machine Learning"
+},
+{
+  title: "AI Stock Price Prediction System",
+  desc: "A machine learning powered stock price prediction system that uses historical market data from Yahoo Finance to forecast future prices. The system applies Linear Regression and Random Forest models, and provides real-time predictions through a Flask API with an interactive frontend dashboard showing actual vs predicted trends.",
+  image: "/projects/stock-prediction.png",
+  live: "",
+  code: "https://github.com/Sara-inam/DeveloperHub-Coperation/tree/main/stock-price-prediction",
+  tech: "Python, Flask, Scikit-learn, Pandas, NumPy, Yahoo Finance API, Machine Learning, HTML, CSS, JavaScript"
+},
+{
+  title: "Heart Disease Risk Prediction System (AI Web App)",
+  desc: "A full-stack machine learning web application that predicts heart disease risk based on 13 medical parameters. The system uses a trained Logistic Regression model with feature scaling and provides real-time predictions through a Flask REST API. A responsive frontend allows users to input medical data and instantly view risk level and probability scores.",
+  image: "/projects/heart-disease.png",
+  live: "",
+  code: "https://github.com/Sara-inam/DeveloperHub-Coperation/tree/main/heart-disease-prediction",
+  tech: "Python, Flask, Scikit-learn, Logistic Regression, Decision Tree, NumPy, Pandas, Flask-CORS, HTML, CSS, JavaScript"
+},
+{
+  title: "Health Assistant AI Chatbot (LLM Powered)",
+  desc: "Developed a conversational AI health assistant using OpenAI's language models, integrated with a Flask backend and dynamic frontend interface. The system features real-time chat capabilities, safety filtering for responsible AI responses, and secure API-based architecture for scalable deployment.",
+  image: "/projects/health-chatbot.png",
+  live: "",
+  code: "https://github.com/Sara-inam/DeveloperHub-Coperation/tree/main/health-chatbot",
+  tech: "Python, Flask, OpenAI API, LLM Integration, Flask-CORS, JavaScript, HTML, CSS, NLP, Safety Filtering"
 }
 ];

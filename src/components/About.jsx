@@ -55,7 +55,7 @@ export default function About() {
         >
           {[
             { value: "1+", label: "Years Experience" },
-            { value: "6", label: "Projects Completed" },
+            { value: "10+", label: "Projects Completed" },
             { value: "100%", label: "Client Satisfaction" },
           ].map((item, i) => (
             <motion.div

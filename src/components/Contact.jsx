@@ -173,7 +173,7 @@ export default function Contact() {
           </span>
 
           <motion.a
-            href="https://wa.me/923345540116"
+            href="https://wa.me/923237834507"
             target="_blank"
             whileHover={{ scale: 1.08 }}
             className="px-6 py-3 bg-green-500/20 border border-green-400/40 rounded-xl text-green-300 hover:bg-green-500/30 hover:text-white text-sm font-medium transition-all flex items-center gap-2"
