@@ -19,10 +19,13 @@ export default function Projects() {
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="text-3xl sm:text-4xl md:text-5xl font-black text-center mb-12 sm:mb-16 text-white"
+        className="text-3xl sm:text-4xl md:text-5xl font-black text-center mb-3 text-white"
       >
-        My <span className="text-blue-400">Projects</span>
+        Selected <span className="text-blue-400">Projects</span>
       </motion.h2>
+      <p className="text-gray-400 text-sm sm:text-base text-center max-w-2xl mx-auto mb-12 sm:mb-16">
+        Work that delivered real value for businesses and end-users.
+      </p>
 
       {/* Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 max-w-7xl mx-auto perspective-[1200px]">
@@ -91,6 +94,13 @@ export default function Projects() {
               <p className="text-gray-400 text-xs sm:text-sm mt-2">
                 {p.desc}
               </p>
+
+              {p.outcome && (
+                <p className="text-[11px] sm:text-xs text-emerald-400/90 mt-2 font-medium flex items-center gap-1.5">
+                  <span className="inline-block w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                  {p.outcome}
+                </p>
+              )}
 
               {/* TECH STACK */}
               {p.tech && (

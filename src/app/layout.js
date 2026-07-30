@@ -1,14 +1,16 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Sara | Full Stack Developer",
-  description: "Portfolio of Full Stack Developer",
+  title: "Sara | Full Stack, Mobile & AI/ML Developer",
+  description: "Senior Full Stack Developer specializing in web apps, mobile-ready platforms, and AI/ML automation. Download resume and book a strategy call.",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-black text-white">{children}</body>
+      <body className="bg-black text-white font-sans antialiased overflow-x-hidden">
+        {children}
+      </body>
     </html>
   );
 }

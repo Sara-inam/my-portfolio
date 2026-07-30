@@ -9,11 +9,13 @@ export default function Navbar() {
   const navItems = [
     { id: "home", label: "Home" },
     { id: "about", label: "About" },
-        { id: "projects", label: "Projects" },
+    { id: "projects", label: "Projects" },
+    { id: "services", label: "Services" },
+    { id: "process", label: "Process" },
+    { id: "schedule", label: "Book Call" },
     { id: "skills", label: "Skills" },
-{ id: "education", label: "Education" },
+    { id: "resume", label: "Resume" },
     { id: "contact", label: "Contact" },
-    
   ];
 
   useEffect(() => {

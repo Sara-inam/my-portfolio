@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 
 const skills = [
   "HTML","CSS","JavaScript","TypeScript",
-  "React","Next.js","Vue.js","Angular",
-  "Java","C++","Data Structures",
+  "React","Next.js","React Native","Flutter",
+  "Java","Swift","Data Structures",
 
   "Node.js","Express.js","Python","Django",
   "Flask","FastAPI","PHP","Laravel",
@@ -15,7 +15,6 @@ const skills = [
   "Tailwind CSS","Bootstrap","Styled Components",
   "Docker","Git","Vercel","Netlify","Heroku",
 
-  // 🔥 AI / ML
   "Machine Learning",
   "Deep Learning",
   "Artificial Intelligence",
@@ -27,7 +26,11 @@ const skills = [
   "NumPy",
   "Matplotlib",
   "Seaborn",
-  "Data Analysis"
+  "Data Analysis",
+  "REST APIs",
+  "GraphQL",
+  "PWA",
+  "Mobile UI"
 ];
 
 export default function Skills() {
@@ -59,12 +62,12 @@ export default function Skills() {
         <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black leading-tight">
           <span className="block text-white">Technologies</span>
           <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-emerald-400 bg-clip-text text-transparent">
-            I Work With
+            That Power Solutions
           </span>
         </h2>
 
         <p className="text-gray-400 mt-4 text-sm sm:text-base max-w-2xl mx-auto">
-          Tools and technologies I use to build scalable, modern and AI-powered applications.
+          Modern tools I use to build scalable, performant, and AI-ready products for businesses.
         </p>
       </motion.div>
 

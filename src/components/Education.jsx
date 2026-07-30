@@ -6,13 +6,13 @@ const education = [
   {
     year: "2022 – 2025",
     title: "BS Information Technology",
-    institute: "Government Graduate Civil Lines College, Sheikhupura",
+    institute: "Government Graduate Civil Lines College, Lahore",
     detail: "CGPA: 3.59"
   },
   {
     year: "2020 – 2022",
     title: "FSc Pre-Engineering",
-    institute: "Government Women College, Sheikhupura",
+    institute: "Government Women College, Lahore",
     detail: "Marks: 998"
   },
   {
@@ -50,14 +50,14 @@ export default function Education() {
         className="text-center mb-12 sm:mb-16 relative z-10"
       >
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black">
-          <span className="text-white">My</span>{" "}
+          <span className="text-white">Academic</span>{" "}
           <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-emerald-400 bg-clip-text text-transparent">
-            Education
+            Foundation
           </span>
         </h2>
 
         <p className="text-gray-400 mt-4 text-sm sm:text-base max-w-2xl mx-auto">
-          My academic journey and educational background in IT and Computer Science.
+          A strong educational foundation in Information Technology and Computer Science.
         </p>
       </motion.div>
 

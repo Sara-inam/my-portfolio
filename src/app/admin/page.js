@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { useRouter } from "next/navigation";
 
 export default function AdminDashboard() {
@@ -12,17 +12,7 @@ export default function AdminDashboard() {
   const [page, setPage] = useState(1);
   const [pagination, setPagination] = useState({});
 
-  useEffect(() => {
-    const token = localStorage.getItem("adminToken");
-
-    if (!token) {
-      router.push("/admin/login");
-    } else {
-      fetchContacts(token, page);
-    }
-  }, [page]);
-
-  const fetchContacts = async (token, pageNumber) => {
+  const fetchContacts = useCallback(async (token, pageNumber) => {
     setLoading(true);
 
     try {
@@ -48,7 +38,17 @@ export default function AdminDashboard() {
     }
 
     setLoading(false);
-  };
+  }, [router]);
+
+  useEffect(() => {
+    const token = localStorage.getItem("adminToken");
+
+    if (!token) {
+      router.push("/admin/login");
+    } else {
+      fetchContacts(token, page); // eslint-disable-line react-hooks/set-state-in-effect
+    }
+  }, [page, fetchContacts, router]);
   const handleLogout = () => {
   localStorage.removeItem("adminToken");
   router.push("/admin/login");
