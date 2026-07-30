@@ -1,12 +1,12 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import Hero from "@/components/Hero";
+import Contact from "@/components/Contact";
 
-export default function Home() {
+export default function ContactPage() {
   return (
     <main className="min-h-screen bg-white text-gray-900">
       <Navbar />
-      <Hero />
+      <Contact />
       <Footer />
     </main>
   );

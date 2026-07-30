@@ -1,12 +1,12 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import Hero from "@/components/Hero";
+import Services from "@/components/Services";
 
-export default function Home() {
+export default function ServicesPage() {
   return (
     <main className="min-h-screen bg-white text-gray-900">
       <Navbar />
-      <Hero />
+      <Services />
       <Footer />
     </main>
   );

@@ -1,115 +1,93 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
-  const [active, setActive] = useState("home");
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
 
   const navItems = [
-    { id: "home", label: "Home" },
-    { id: "about", label: "About" },
-    { id: "projects", label: "Projects" },
-    { id: "services", label: "Services" },
-    { id: "process", label: "Process" },
-    { id: "schedule", label: "Book Call" },
-    { id: "skills", label: "Skills" },
-    { id: "resume", label: "Resume" },
-    { id: "contact", label: "Contact" },
+    { id: "/", label: "Home" },
+    { id: "/about", label: "About" },
+    { id: "/skills", label: "Skills" },
+    { id: "/projects", label: "Projects" },
+    { id: "/services", label: "Services" },
+    { id: "/process", label: "Process" },
+    { id: "/education", label: "Education" },
+    { id: "/resume", label: "Resume" },
+    { id: "/schedule", label: "Schedule" },
+    { id: "/contact", label: "Contact" },
   ];
 
   useEffect(() => {
-    const sections = document.querySelectorAll("section");
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActive(entry.target.id);
-          }
-        });
-      },
-      { threshold: 0.6 }
-    );
-
-    sections.forEach((sec) => observer.observe(sec));
-    return () => observer.disconnect();
-  }, []);
-
-  const scrollTo = (id) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-    setActive(id);
-    setOpen(false);
-  };
+    setOpen(false); // eslint-disable-line react-hooks/set-state-in-effect
+  }, [pathname]);
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-black/30 backdrop-blur-xl border-b border-white/10">
+    <nav className="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-xl border-b border-pink-100 shadow-sm">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center py-4">
+          <Link href="/" className="text-xl font-bold bg-gradient-to-r from-pink-600 to-rose-500 bg-clip-text text-transparent">
+            Sara.dev
+          </Link>
 
-      <div className="flex justify-between items-center px-6 md:px-12 py-4">
+          <div className="hidden lg:flex items-center gap-1 bg-pink-50/80 px-2 py-2 rounded-full border border-pink-100">
+            {navItems.map((item) => (
+              <Link
+                key={item.id}
+                href={item.id}
+                className={`relative px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
+                  pathname === item.id
+                    ? "text-white bg-gradient-to-r from-pink-600 to-rose-500 shadow-md"
+                    : "text-gray-600 hover:text-pink-600 hover:bg-pink-50"
+                }`}
+              >
+                {item.label}
+              </Link>
+            ))}
+          </div>
 
-        {/* Logo (Updated) */}
-        <h1 className="text-xl font-semibold text-blue-500 tracking-wide">
-          Sara.dev
-        </h1>
-
-        {/* Desktop Menu */}
-        <div className="hidden md:flex items-center gap-2 bg-white/5 px-2 py-2 rounded-full border border-white/10">
-
-          {navItems.map((item) => (
-            <button
-              key={item.id}
-              onClick={() => scrollTo(item.id)}
-              className={`relative px-5 py-2 rounded-full text-sm transition-all duration-300 ${
-                active === item.id
-                  ? "text-white"
-                  : "text-gray-400 hover:text-white"
-              }`}
-            >
-              {/* Active Background */}
-              {active === item.id && (
-                <span className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full blur opacity-70"></span>
+          <button
+            onClick={() => setOpen(!open)}
+            className="lg:hidden p-2 rounded-lg text-gray-700 hover:bg-pink-50 transition-colors"
+            aria-label="Toggle menu"
+          >
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              {open ? (
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              ) : (
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
               )}
-
-              <span className="relative z-10">{item.label}</span>
-            </button>
-          ))}
-
+            </svg>
+          </button>
         </div>
-
-        {/* Mobile Toggle */}
-        <button
-          onClick={() => setOpen(!open)}
-          className="md:hidden text-white text-2xl"
-        >
-          {open ? "✕" : "☰"}
-        </button>
       </div>
 
-      {/* Mobile Menu */}
       <div
-        className={`md:hidden overflow-hidden transition-all duration-500 ${
-          open ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+        className={`lg:hidden overflow-hidden transition-all duration-500 ${
+          open ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <div className="flex flex-col items-center gap-3 py-6 bg-black/90 backdrop-blur-2xl border-t border-white/10">
-
-          {navItems.map((item) => (
-            <button
-              key={item.id}
-              onClick={() => scrollTo(item.id)}
-              className={`w-4/5 py-3 rounded-full text-base transition ${
-                active === item.id
-                  ? "bg-gradient-to-r from-blue-600 to-purple-600 text-white"
-                  : "text-gray-400 bg-white/5"
-              }`}
-            >
-              {item.label}
-            </button>
-          ))}
-
+        <div className="px-4 sm:px-6 pb-6 bg-white/95 backdrop-blur-xl border-t border-pink-100">
+          <div className="flex flex-col items-center gap-2 pt-4">
+            {navItems.map((item) => (
+              <Link
+                key={item.id}
+                href={item.id}
+                className={`w-full py-3 rounded-2xl text-center font-medium transition-all duration-300 ${
+                  pathname === item.id
+                    ? "bg-gradient-to-r from-pink-600 to-rose-500 text-white shadow-lg"
+                    : "text-gray-700 bg-pink-50/80 hover:bg-pink-100"
+                }`}
+              >
+                {item.label}
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
-
     </nav>
   );
 }
