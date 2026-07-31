@@ -93,8 +93,8 @@ export default function Projects() {
       id="projects"
       className="relative py-20 sm:py-24 lg:py-28 px-4 sm:px-6 lg:px-12 overflow-hidden bg-white"
     >
-      <div className="absolute w-72 sm:w-96 h-72 sm:h-96 bg-pink-100 rounded-full blur-3xl top-10 left-5 sm:left-10" />
-      <div className="absolute w-72 sm:w-96 h-72 sm:h-96 bg-rose-100 rounded-full blur-3xl bottom-10 right-5 sm:right-10" />
+      <div className="absolute w-72 sm:w-96 h-72 sm:h-96 bg-purple-100 rounded-full blur-3xl top-10 left-5 sm:left-10" />
+      <div className="absolute w-72 sm:w-96 h-72 sm:h-96 bg-purple-100 rounded-full blur-3xl bottom-10 right-5 sm:right-10" />
 
       <div className="max-w-7xl mx-auto relative z-10">
         <motion.h2
@@ -103,7 +103,7 @@ export default function Projects() {
           transition={{ duration: 0.6 }}
           className="text-3xl sm:text-4xl md:text-5xl font-black text-center mb-3 text-gray-900"
         >
-          Selected <span className="bg-gradient-to-r from-pink-600 to-rose-500 bg-clip-text text-transparent">Projects</span>
+          Selected <span className="bg-gradient-to-r from-purple-600 to-purple-500 bg-clip-text text-transparent">Projects</span>
         </motion.h2>
         <p className="text-gray-600 text-sm sm:text-base text-center max-w-2xl mx-auto mb-12 sm:mb-16">
           Work that delivered real value for businesses and end-users.
@@ -116,9 +116,9 @@ export default function Projects() {
               initial={{ opacity: 0, y: 60 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="group relative rounded-2xl overflow-hidden bg-white border border-pink-100 shadow-sm shadow-pink-100 transition-all duration-300 hover:shadow-md hover:shadow-pink-200"
+              className="group relative rounded-2xl overflow-hidden bg-white border border-purple-100 shadow-sm shadow-purple-100 transition-all duration-300 hover:shadow-md hover:shadow-purple-200"
             >
-              <div className="relative h-48 sm:h-52 md:h-56 w-full overflow-hidden bg-pink-50">
+              <div className="relative h-48 sm:h-52 md:h-56 w-full overflow-hidden bg-purple-50">
                 <Image
                   src={p.image}
                   alt={p.title}
@@ -126,7 +126,7 @@ export default function Projects() {
                   sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-cover object-center transition duration-700 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-pink-100/80 via-pink-50/40 to-transparent opacity-80 pointer-events-none" />
+                <div className="absolute inset-0 bg-gradient-to-t from-purple-100/80 via-purple-50/40 to-transparent opacity-80 pointer-events-none" />
 
                 <div className="absolute inset-0 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 opacity-0 group-hover:opacity-100 transition duration-500 z-20">
                   {p.live ? (
@@ -134,7 +134,7 @@ export default function Projects() {
                       href={p.live}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="px-3 sm:px-4 py-2 bg-pink-600 rounded-lg text-white text-xs sm:text-sm hover:scale-105 transition"
+                      className="px-3 sm:px-4 py-2 bg-purple-600 rounded-lg text-white text-xs sm:text-sm hover:scale-105 transition"
                     >
                       Live
                     </a>
@@ -146,7 +146,7 @@ export default function Projects() {
                     href={p.code}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-4 sm:px-5 py-2 rounded-lg text-xs sm:text-sm text-white font-semibold bg-gradient-to-r from-gray-800 to-gray-900 border border-white/20 shadow-lg shadow-black/40 hover:scale-110 hover:shadow-pink-500/30 hover:border-pink-500 transition-all duration-300"
+                    className="px-4 sm:px-5 py-2 rounded-lg text-xs sm:text-sm text-white font-semibold bg-gradient-to-r from-gray-800 to-gray-900 border border-white/20 shadow-lg shadow-black/40 hover:scale-110 hover:shadow-purple-500/30 hover:border-purple-500 transition-all duration-300"
                   >
                     Code
                   </a>
@@ -154,7 +154,7 @@ export default function Projects() {
               </div>
 
               <div className="p-4 sm:p-5 lg:p-6">
-                <h3 className="text-lg sm:text-xl font-bold text-gray-900 group-hover:text-pink-600 transition">
+                <h3 className="text-lg sm:text-xl font-bold text-gray-900 group-hover:text-purple-600 transition">
                   {p.title}
                 </h3>
                 <p className="text-gray-600 text-xs sm:text-sm mt-2">
@@ -162,8 +162,8 @@ export default function Projects() {
                 </p>
 
                 {p.outcome && (
-                  <p className="text-[11px] sm:text-xs text-pink-600 mt-2 font-medium flex items-center gap-1.5">
-                    <span className="inline-block w-1.5 h-1.5 rounded-full bg-pink-500"></span>
+                  <p className="text-[11px] sm:text-xs text-purple-600 mt-2 font-medium flex items-center gap-1.5">
+                    <span className="inline-block w-1.5 h-1.5 rounded-full bg-purple-500"></span>
                     {p.outcome}
                   </p>
                 )}
@@ -173,7 +173,7 @@ export default function Projects() {
                     {p.tech.split(",").map((t, idx) => (
                       <span
                         key={idx}
-                        className="text-[10px] sm:text-xs px-2 py-1 bg-pink-50 border border-pink-100 rounded-full text-pink-700"
+                        className="text-[10px] sm:text-xs px-2 py-1 bg-purple-50 border border-purple-100 rounded-full text-purple-700"
                       >
                         {t.trim()}
                       </span>
@@ -182,7 +182,7 @@ export default function Projects() {
                 )}
               </div>
 
-              <div className="absolute inset-0 bg-gradient-to-r from-pink-500/5 via-rose-500/5 to-pink-500/5 opacity-0 group-hover:opacity-100 blur-xl transition" />
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-500/5 via-purple-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 blur-xl transition" />
             </motion.div>
           ))}
         </div>

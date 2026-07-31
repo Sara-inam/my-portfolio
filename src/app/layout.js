@@ -2,7 +2,7 @@ import "./globals.css";
 
 export const metadata = {
   title: "Sara | Full Stack, Mobile & AI/ML Developer",
-  description: "Senior Full Stack Developer specializing in web apps, mobile-ready platforms, and AI/ML automation. Download resume and book a strategy call.",
+  description: "Senior Full Stack Developer specializing in web apps, mobile-ready platforms, and AI/ML automation. Book a strategy call and download resume.",
 };
 
 export default function RootLayout({ children }) {

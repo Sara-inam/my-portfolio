@@ -7,7 +7,7 @@ const trustSignals = [
   { color: "bg-emerald-500", label: "Clean, Maintainable Code" },
   { color: "bg-blue-500", label: "Fast Time-to-Market" },
   { color: "bg-purple-500", label: "Production-Ready Delivery" },
-  { color: "bg-pink-500", label: "Business-First Approach" },
+  { color: "bg-purple-500", label: "Business-First Approach" },
 ];
 
 export default function About() {
@@ -17,12 +17,12 @@ export default function About() {
       className="relative py-20 sm:py-24 lg:py-28 px-4 sm:px-6 lg:px-12 overflow-hidden bg-white"
     >
       <motion.div
-        className="absolute w-72 h-72 bg-pink-100 rounded-full blur-3xl top-10 left-10"
+        className="absolute w-72 h-72 bg-purple-100 rounded-full blur-3xl top-10 left-10"
         animate={{ x: [0, 40, 0], y: [0, -30, 0] }}
         transition={{ duration: 12, repeat: Infinity }}
       />
       <motion.div
-        className="absolute w-72 h-72 bg-rose-100 rounded-full blur-3xl bottom-10 right-10"
+        className="absolute w-72 h-72 bg-purple-100 rounded-full blur-3xl bottom-10 right-10"
         animate={{ x: [0, -40, 0], y: [0, 30, 0] }}
         transition={{ duration: 14, repeat: Infinity }}
       />
@@ -33,7 +33,7 @@ export default function About() {
           whileInView={{ opacity: 1, y: 0 }}
           className="inline-block"
         >
-          <div className="w-16 h-1 bg-gradient-to-r from-pink-500 to-rose-500 rounded-full mx-auto mb-6" />
+          <div className="w-16 h-1 bg-gradient-to-r from-purple-500 to-purple-500 rounded-full mx-auto mb-6" />
         </motion.div>
 
         <motion.h2
@@ -43,7 +43,7 @@ export default function About() {
           className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-black text-gray-900 leading-tight"
         >
           Turning Complex Challenges Into{" "}
-          <span className="bg-gradient-to-r from-pink-600 via-rose-500 to-pink-500 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-purple-600 via-purple-500 to-purple-500 bg-clip-text text-transparent">
             Scalable Business Results
           </span>
         </motion.h2>
@@ -67,12 +67,12 @@ export default function About() {
             <motion.div
               key={i}
               whileHover={{ scale: 1.05, y: -4 }}
-              className="p-4 sm:p-6 rounded-2xl bg-white border border-pink-100 shadow-sm shadow-pink-100 hover:shadow-md hover:shadow-pink-200 transition-all"
+              className="p-4 sm:p-6 rounded-2xl bg-white border border-purple-100 shadow-sm shadow-purple-100 hover:shadow-md hover:shadow-purple-200 transition-all"
             >
               <div className="text-2xl sm:text-3xl mb-2">
                 <span className={`inline-block w-4 h-4 sm:w-5 sm:h-5 rounded-full ${item.color}`} />
               </div>
-              <div className="text-xs sm:text-sm font-semibold bg-gradient-to-r from-pink-600 to-rose-500 bg-clip-text text-transparent">
+              <div className="text-xs sm:text-sm font-semibold bg-gradient-to-r from-purple-600 to-purple-500 bg-clip-text text-transparent">
                 {item.label}
               </div>
             </motion.div>
@@ -87,13 +87,13 @@ export default function About() {
         >
           <Link
             href="/schedule"
-            className="px-8 py-3.5 bg-gradient-to-r from-pink-600 to-rose-500 hover:from-pink-700 hover:to-rose-600 rounded-xl font-semibold text-sm sm:text-base text-white shadow-lg hover:shadow-pink-500/30 transition-all"
+            className="px-8 py-3.5 bg-gradient-to-r from-purple-600 to-purple-500 hover:from-purple-700 hover:to-purple-600 rounded-xl font-semibold text-sm sm:text-base text-white shadow-lg hover:shadow-purple-500/30 transition-all"
           >
             Book A Strategy Call
           </Link>
           <Link
             href="/projects"
-            className="px-8 py-3.5 rounded-xl border border-pink-200 bg-white text-gray-700 text-sm font-semibold hover:bg-pink-50 transition-all"
+            className="px-8 py-3.5 rounded-xl border border-purple-200 bg-white text-gray-700 text-sm font-semibold hover:bg-purple-50 transition-all"
           >
             View My Work
           </Link>

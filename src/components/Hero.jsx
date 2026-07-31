@@ -7,11 +7,11 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center px-4 sm:px-8 lg:px-20 py-20 overflow-hidden bg-gradient-to-br from-pink-50 via-white to-rose-50"
+      className="relative min-h-screen flex items-center justify-center px-4 sm:px-8 lg:px-20 py-20 overflow-hidden bg-gradient-to-br from-purple-50 via-white to-purple-50"
     >
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-20 left-10 w-[350px] sm:w-[500px] lg:w-[600px] h-[350px] sm:h-[500px] lg:h-[600px] bg-pink-200/30 blur-[150px] rounded-full" />
-        <div className="absolute bottom-10 right-5 sm:right-10 w-[300px] sm:w-[400px] lg:w-[500px] h-[300px] sm:h-[400px] lg:h-[500px] bg-rose-200/30 blur-[120px] rounded-full" />
+        <div className="absolute top-20 left-10 w-[350px] sm:w-[500px] lg:w-[600px] h-[350px] sm:h-[500px] lg:h-[600px] bg-purple-200/30 blur-[150px] rounded-full" />
+        <div className="absolute bottom-10 right-5 sm:right-10 w-[300px] sm:w-[400px] lg:w-[500px] h-[300px] sm:h-[400px] lg:h-[500px] bg-purple-200/30 blur-[120px] rounded-full" />
       </div>
 
       <div className="absolute inset-0 opacity-[0.3] bg-[linear-gradient(to_right,#fbcfe8_1px,transparent_1px),linear-gradient(to_bottom,#fbcfe8_1px,transparent_1px)] bg-[size:60px_60px] sm:bg-[size:80px_80px]" />
@@ -23,17 +23,17 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
           className="text-center lg:text-left max-w-xl mx-auto lg:mx-0"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-pink-200 bg-pink-50 text-pink-700 text-xs sm:text-sm mb-5 backdrop-blur-xl">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-purple-200 bg-purple-50 text-purple-700 text-xs sm:text-sm mb-5 backdrop-blur-xl">
             <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-pink-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-pink-500"></span>
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-purple-500"></span>
             </span>
             Available for new business projects
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-black leading-[1.05] tracking-tight text-gray-900">
             <span className="block">Scalable Web</span>
-            <span className="block bg-gradient-to-r from-pink-600 via-rose-500 to-pink-500 bg-clip-text text-transparent">
+            <span className="block bg-gradient-to-r from-purple-600 via-purple-500 to-purple-500 bg-clip-text text-transparent">
               Solutions That
             </span>
             <span className="block">Drive Growth</span>
@@ -46,13 +46,13 @@ export default function Hero() {
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
             <Link
               href="#schedule"
-              className="px-7 py-4 rounded-2xl bg-gradient-to-r from-pink-600 to-rose-500 text-white text-sm font-bold shadow-xl hover:shadow-pink-500/30 hover:scale-105 transition-all duration-300 text-center"
+              className="px-7 py-4 rounded-2xl bg-gradient-to-r from-purple-600 to-purple-500 text-white text-sm font-bold shadow-xl hover:shadow-purple-500/30 hover:scale-105 transition-all duration-300 text-center"
             >
               Book A Strategy Call
             </Link>
             <Link
               href="#projects"
-              className="px-7 py-4 rounded-2xl border border-pink-200 bg-white text-gray-700 text-sm font-semibold hover:bg-pink-50 transition-all duration-300 text-center"
+              className="px-7 py-4 rounded-2xl border border-purple-200 bg-white text-gray-700 text-sm font-semibold hover:bg-purple-50 transition-all duration-300 text-center"
             >
               View Projects
             </Link>
@@ -67,9 +67,9 @@ export default function Hero() {
               <motion.div
                 key={i}
                 whileHover={{ y: -5 }}
-                className="text-center p-3 sm:p-4 rounded-2xl bg-white border border-pink-100 shadow-sm shadow-pink-100"
+                className="text-center p-3 sm:p-4 rounded-2xl bg-white border border-purple-100 shadow-sm shadow-purple-100"
               >
-                <h2 className="text-xl sm:text-2xl font-black bg-gradient-to-r from-pink-600 to-rose-500 bg-clip-text text-transparent">
+                <h2 className="text-xl sm:text-2xl font-black bg-gradient-to-r from-purple-600 to-purple-500 bg-clip-text text-transparent">
                   {num}
                 </h2>
                 <p className="text-gray-500 text-[10px] sm:text-xs uppercase tracking-wider mt-1">
@@ -90,24 +90,24 @@ export default function Hero() {
             <motion.div
               animate={{ rotate: 360 }}
               transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-              className="absolute inset-0 rounded-full border-[3px] border-dashed border-pink-200"
+              className="absolute inset-0 rounded-full border-[3px] border-dashed border-purple-200"
             />
 
             <motion.div
               animate={{ scale: [1, 1.05, 1] }}
               transition={{ duration: 4, repeat: Infinity }}
-              className="absolute inset-4 rounded-full bg-gradient-to-br from-pink-100 via-rose-100 to-white blur-2xl"
+              className="absolute inset-4 rounded-full bg-gradient-to-br from-purple-100 via-purple-100 to-white blur-2xl"
             />
 
             <motion.div
               whileHover={{ scale: 1.05 }}
-              className="absolute inset-8 rounded-full border border-pink-200 bg-white backdrop-blur-2xl shadow-[0_0_80px_rgba(236,72,153,0.15)] flex flex-col items-center justify-center"
+              className="absolute inset-8 rounded-full border border-purple-200 bg-white backdrop-blur-2xl shadow-[0_0_80px_rgba(236,72,153,0.15)] flex flex-col items-center justify-center"
             >
               <div className="text-center px-8">
-                <div className="w-20 h-20 mx-auto rounded-full bg-gradient-to-br from-pink-500 to-rose-600 flex items-center justify-center mb-3 shadow-lg shadow-pink-500/30">
+                <div className="w-20 h-20 mx-auto rounded-full bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center mb-3 shadow-lg shadow-purple-500/30">
                   <span className="text-2xl font-black text-white">S</span>
                 </div>
-                <h2 className="text-3xl font-black bg-gradient-to-r from-pink-600 to-rose-500 bg-clip-text text-transparent">
+                <h2 className="text-3xl font-black bg-gradient-to-r from-purple-600 to-purple-500 bg-clip-text text-transparent">
                   Sara Inam
                 </h2>
                 <p className="mt-1 text-gray-600 text-sm font-medium">
@@ -122,25 +122,25 @@ export default function Hero() {
             <motion.div
               animate={{ y: [0, -15, 0] }}
               transition={{ duration: 4, repeat: Infinity }}
-              className="absolute -top-4 -left-8 px-5 py-3 rounded-2xl bg-white border border-pink-200 backdrop-blur-xl shadow-lg"
+              className="absolute -top-4 -left-8 px-5 py-3 rounded-2xl bg-white border border-purple-200 backdrop-blur-xl shadow-lg"
             >
-              <p className="text-pink-600 font-semibold text-sm">Web Applications</p>
+              <p className="text-purple-600 font-semibold text-sm">Web Applications</p>
             </motion.div>
 
             <motion.div
               animate={{ y: [0, 15, 0] }}
               transition={{ duration: 5, repeat: Infinity }}
-              className="absolute -bottom-2 -right-8 px-5 py-3 rounded-2xl bg-white border border-pink-200 backdrop-blur-xl shadow-lg"
+              className="absolute -bottom-2 -right-8 px-5 py-3 rounded-2xl bg-white border border-purple-200 backdrop-blur-xl shadow-lg"
             >
-              <p className="text-rose-500 font-semibold text-sm">AI Integration</p>
+              <p className="text-purple-500 font-semibold text-sm">AI Integration</p>
             </motion.div>
 
             <motion.div
               animate={{ y: [0, -10, 0], x: [0, 5, 0] }}
               transition={{ duration: 6, repeat: Infinity }}
-              className="absolute top-1/2 -right-12 px-4 py-2 rounded-xl bg-white border border-pink-200 backdrop-blur-xl shadow-lg"
+              className="absolute top-1/2 -right-12 px-4 py-2 rounded-xl bg-white border border-purple-200 backdrop-blur-xl shadow-lg"
             >
-              <p className="text-pink-600 font-semibold text-xs">🚀 Fast Delivery</p>
+              <p className="text-purple-600 font-semibold text-xs">🚀 Fast Delivery</p>
             </motion.div>
           </div>
         </motion.div>

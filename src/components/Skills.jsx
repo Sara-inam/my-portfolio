@@ -27,12 +27,12 @@ export default function Skills() {
       className="relative py-20 sm:py-24 lg:py-28 px-4 sm:px-6 lg:px-12 overflow-hidden bg-white"
     >
       <motion.div
-        className="absolute w-72 h-72 bg-pink-100 rounded-full blur-3xl top-10 left-5 sm:left-10"
+        className="absolute w-72 h-72 bg-purple-100 rounded-full blur-3xl top-10 left-5 sm:left-10"
         animate={{ x: [0, 50, 0], y: [0, -30, 0] }}
         transition={{ duration: 12, repeat: Infinity }}
       />
       <motion.div
-        className="absolute w-72 h-72 bg-rose-100 rounded-full blur-3xl bottom-10 right-5 sm:right-10"
+        className="absolute w-72 h-72 bg-purple-100 rounded-full blur-3xl bottom-10 right-5 sm:right-10"
         animate={{ x: [0, -50, 0], y: [0, 30, 0] }}
         transition={{ duration: 14, repeat: Infinity }}
       />
@@ -46,7 +46,7 @@ export default function Skills() {
         >
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black leading-tight text-gray-900">
             <span className="block">Technologies</span>
-            <span className="bg-gradient-to-r from-pink-600 via-rose-500 to-pink-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-purple-600 via-purple-500 to-purple-500 bg-clip-text text-transparent">
               That Power Solutions
             </span>
           </h2>
@@ -64,16 +64,16 @@ export default function Skills() {
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.5, delay: i * 0.15 }}
               whileHover={{ y: -4 }}
-              className="group relative p-6 sm:p-8 rounded-3xl bg-white border border-pink-100 shadow-sm shadow-pink-100 hover:shadow-md hover:shadow-pink-200 hover:border-pink-200 transition-all"
+              className="group relative p-6 sm:p-8 rounded-3xl bg-white border border-purple-100 shadow-sm shadow-purple-100 hover:shadow-md hover:shadow-purple-200 hover:border-purple-200 transition-all"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-pink-500/5 via-transparent to-rose-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl" />
+              <div className="absolute inset-0 bg-gradient-to-br from-purple-500/5 via-transparent to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl" />
 
               <div className="relative z-10">
                 <div className="flex items-center gap-3 mb-2">
-                  <span className="text-xs font-bold text-pink-600 bg-pink-50 border border-pink-100 px-2.5 py-1 rounded-full tracking-wider uppercase">
+                  <span className="text-xs font-bold text-purple-600 bg-purple-50 border border-purple-100 px-2.5 py-1 rounded-full tracking-wider uppercase">
                     {String(i + 1).padStart(2, "0")}
                   </span>
-                  <h3 className="text-lg sm:text-xl font-bold text-gray-900 group-hover:text-pink-600 transition-colors">
+                  <h3 className="text-lg sm:text-xl font-bold text-gray-900 group-hover:text-purple-600 transition-colors">
                     {group.category}
                   </h3>
                 </div>
@@ -84,7 +84,7 @@ export default function Skills() {
                   {group.skills.map((skill) => (
                     <span
                       key={skill}
-                      className="text-xs px-3 py-1.5 rounded-full bg-pink-50 border border-pink-100 text-gray-700 group-hover:border-pink-200 transition-colors"
+                      className="text-xs px-3 py-1.5 rounded-full bg-purple-50 border border-purple-100 text-gray-700 group-hover:border-purple-200 transition-colors"
                     >
                       {skill}
                     </span>
