@@ -140,7 +140,7 @@ export default function Hero() {
               transition={{ duration: 6, repeat: Infinity }}
               className="absolute top-1/2 -right-12 px-4 py-2 rounded-xl bg-white border border-purple-200 backdrop-blur-xl shadow-lg"
             >
-              <p className="text-purple-600 font-semibold text-xs">🚀 Fast Delivery</p>
+              <p className="text-purple-600 font-semibold text-xs">Fast Delivery</p>
             </motion.div>
           </div>
         </motion.div>
