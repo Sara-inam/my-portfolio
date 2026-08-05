@@ -4,6 +4,15 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 const projects = [
+    {
+    title: "Kaam Kaaj — Service Marketplace Mobile App",
+    desc: "A cross-platform mobile app (Flutter) connecting customers with trusted service providers—browse services, book instantly, and track orders in real time. Backed by a scalable Node.js/Express API with secure payments, role-based access, and a full admin panel for platform management.",
+    image: "/projects/kaam_kaaj_app_mockup.png",
+    live: "https://kaam-kaaj-backend-deploy.vercel.app/",
+    code: "https://github.com/Sara-inam/KaamKaajApp.git",
+    tech: "Flutter, Dart, Node.js, Express, MongoDB, Stripe, JWT",
+    outcome: "Full-featured mobile marketplace with secure bookings & payments",
+  },
   {
     title: "College LMS (Learning Management System)",
     desc: "A full-stack LMS platform built to digitize academic workflows for students, teachers, and admins. Delivered role-based dashboards, course management, attendance tracking, and automated grading.",
@@ -40,15 +49,7 @@ const projects = [
     tech: "React, Express.js, Node.js, MongoDB",
     outcome: "Automated HR workflows + secure access control",
   },
-  {
-    title: "Allied Axis Business Website",
-    desc: "A premium, responsive business website for a corporate client. Optimized for speed, accessibility, and brand presence.",
-    image: "/projects/allied-axis.PNG",
-    live: "https://sara-allied-axis.vercel.app/",
-    code: "https://github.com/Sara-inam/AlliedAxis.git",
-    tech: "Next.js, React, API Routes, Tailwind CSS",
-    outcome: "Stronger brand presence + faster page loads",
-  },
+
   {
     title: "AI Stock Price Prediction System",
     desc: "A machine learning application that forecasts stock trends using Linear Regression and Random Forest models trained on Yahoo Finance data.",
