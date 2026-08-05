@@ -16,7 +16,7 @@ const projects = [
   {
     title: "Music Streaming App (Android)",
     desc: "A native Android music streaming app where users can browse and play trending songs, and explore music by category — including Hindi, Punjabi, and more. Built with Firebase for real-time song data and playback tracking.",
-    image: "/projects/music-app.PNG",
+    image: "/projects/music-app.png",
     live: "",
     code: "https://github.com/Sara-inam/Sara-Inam_Music_App.github.io.git",
     tech: "Kotlin, XML, Firebase, Android Studio",
