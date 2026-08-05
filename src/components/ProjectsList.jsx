@@ -61,6 +61,15 @@ const projects = [
     outcome: "Faster note capture + intelligent summaries",
   },
   {
+    title: "AI News Agent",
+    desc: "An intelligent news aggregation system that pulls articles from multiple sources in real time, then uses NLP to summarize content, analyze sentiment, and deliver personalized news recommendations based on user interests—turning information overload into quick, relevant reads.",
+    image: "/projects/ai-news-agent.png",
+    live: "",
+    code: "https://github.com/Sara-inam/ai_agent_news.git",
+    tech: "Python, NLP, Machine Learning, Natural Language Processing",
+    outcome: "Personalized, summarized news with real-time sentiment analysis",
+  },
+  {
     title: "Employee Management System (MERN)",
     desc: "A full-featured employee management system with authentication, CRUD controls, and an admin dashboard. Built to replace spreadsheets and give teams real-time visibility into HR data.",
     image: "/projects/EMS.png",
