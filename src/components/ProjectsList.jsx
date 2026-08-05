@@ -13,6 +13,7 @@ const projects = [
     tech: "Flutter, Dart, Node.js, Express, MongoDB, Stripe, JWT",
     outcome: "Full-featured mobile marketplace with secure bookings & payments",
   },
+
   {
     title: "College LMS (Learning Management System)",
     desc: "A full-stack LMS platform built to digitize academic workflows for students, teachers, and admins. Delivered role-based dashboards, course management, attendance tracking, and automated grading.",
@@ -22,6 +23,7 @@ const projects = [
     tech: "React, Django, REST API, Bootstrap, PostgreSQL",
     outcome: "Role-based automation, reduced manual work",
   },
+
   {
     title: "Ecommerce Web App (Next.js + API)",
     desc: "A full-stack commerce platform with product discovery, real-time cart, and custom checkout flow. Built to replace static storefronts with a fast, conversion-focused shopping experience.",
@@ -30,6 +32,15 @@ const projects = [
     code: "https://github.com/Sara-inam/Razia_Ecommerce_Web_App.git",
     tech: "Next.js, React, API Routes, MongoDB, Tailwind CSS",
     outcome: "Fast storefront + scalable order management",
+  },
+  {
+    title: "Animal Shelter — Adoption & Donation Platform",
+    desc: "A full-stack web platform connecting stray and shelter animals with loving homes. Users can browse and adopt/buy pets, make donations to support shelter operations, and apply to become a caretaker for animals in need—bringing the entire adoption journey online.",
+    image: "/projects/animal_shelter_website_mockup.png",
+    live: "",
+    code: "https://github.com/Sara-inam/Animal_Welfare.git",
+    tech: "Laravel, PHP, HTML, CSS, JavaScript, jQuery, MySQL",
+    outcome: "Streamlined adoption, donation & caretaker application process",
   },
   {
     title: "AI Notepad (Voice to Text + Summarizer)",
