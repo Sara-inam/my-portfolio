@@ -11,11 +11,11 @@ export default function Navbar() {
   const navItems = [
     { id: "/", label: "Home" },
     { id: "/about", label: "About" },
-    { id: "/skills", label: "Skills" },
     { id: "/projects", label: "Projects" },
     { id: "/services", label: "Services" },
     { id: "/process", label: "Process" },
-    { id: "/education", label: "Education" },
+    { id: "/experience", label: "Experience" },
+    { id: "/skills", label: "Skills" },
     { id: "/resume", label: "Resume" },
     { id: "/schedule", label: "Schedule" },
     { id: "/contact", label: "Contact" },

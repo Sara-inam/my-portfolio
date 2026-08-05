@@ -6,7 +6,7 @@ import Image from "next/image";
 const projects = [
   {
     title: "College LMS (Learning Management System)",
-    desc: "A full-stack LMS platform built to digitize academic workflows for students, teachers, and admins. Delivered role-based dashboards, course management, attendance tracking, and automated grading—cutting manual admin work by ~40%.",
+    desc: "A full-stack LMS platform built to digitize academic workflows for students, teachers, and admins. Delivered role-based dashboards, course management, attendance tracking, and automated grading.",
     image: "/projects/LMS.png",
     live: "",
     code: "https://github.com/sarainam-bsit/College_LMS_FYP_Project.git",
@@ -24,11 +24,11 @@ const projects = [
   },
   {
     title: "AI Notepad (Voice to Text + Summarizer)",
-    desc: "An AI-powered notepad that converts voice into text and auto-summarizes note content. Built with Flask + React to help users capture ideas 3× faster than manual writing.",
+    desc: "An AI-powered notepad that converts voice into text and auto-summarizes note content. Built with Flask + React to help users capture ideas 3x faster than manual writing.",
     image: "/projects/notepad.png",
     live: "",
     code: "https://github.com/Sara-inam/python-fast-api-notepad.git",
-    tech: "React.js, Python Fast API, Vosk, Gemini AI, PostgreSQL",
+    tech: "React.js, Python FastAPI, Vosk, Gemini AI, PostgreSQL",
     outcome: "Faster note capture + intelligent summaries",
   },
   {
@@ -41,17 +41,8 @@ const projects = [
     outcome: "Automated HR workflows + secure access control",
   },
   {
-    title: "Employee Management System (Next.js)",
-    desc: "A follow-up EMS rebuilt with Next.js API routes and server-side capabilities for faster performance, better auth flows, and easier scaling for growing teams.",
-    image: "/projects/EMS.png",
-    live: "https://ems-frontend-murex.vercel.app",
-    code: "https://github.com/Sara-inam/EMS_PROJECT_NEXT.JS.git",
-    tech: "React, Next.js, API Routes, MongoDB",
-    outcome: "Improved speed + server-rendered reliability",
-  },
-  {
-    title: "Allied Axis — Business Website",
-    desc: "A premium, responsive business website for a corporate client. Optimized for speed, accessibility, and brand presence—helping the company project a modern, trustworthy digital identity.",
+    title: "Allied Axis Business Website",
+    desc: "A premium, responsive business website for a corporate client. Optimized for speed, accessibility, and brand presence.",
     image: "/projects/allied-axis.PNG",
     live: "https://sara-allied-axis.vercel.app/",
     code: "https://github.com/Sara-inam/AlliedAxis.git",
@@ -60,41 +51,41 @@ const projects = [
   },
   {
     title: "AI Stock Price Prediction System",
-    desc: "A machine learning application that forecasts stock trends using Linear Regression and Random Forest models trained on Yahoo Finance data. Delivers real-time predictions through an interactive dashboard—enabling data-driven investment decisions.",
+    desc: "A machine learning application that forecasts stock trends using Linear Regression and Random Forest models trained on Yahoo Finance data.",
     image: "/projects/stock-prediction.png",
     live: "",
     code: "https://github.com/Sara-inam/DeveloperHub-Coperation/tree/main/stock-price-prediction",
-    tech: "Python, Flask, Scikit-learn, Pandas, NumPy, Yahoo Finance API, ML, HTML, CSS, JavaScript",
+    tech: "Python, Flask, Scikit-learn, Pandas, NumPy, Yahoo Finance API, ML",
     outcome: "Data-driven decision support via forecasting",
   },
   {
     title: "Heart Disease Risk Prediction (AI Web App)",
-    desc: "A full-stack ML web app that predicts heart disease risk from 13 medical parameters using Logistic Regression. Provides a medically interpretable risk score and probability breakdown in a clean, patient-friendly interface.",
+    desc: "A full-stack ML web app that predicts heart disease risk from 13 medical parameters using Logistic Regression with real-time probability scores.",
     image: "/projects/heart-disease.png",
     live: "",
     code: "https://github.com/Sara-inam/DeveloperHub-Coperation/tree/main/heart-disease-prediction",
-    tech: "Python, Flask, Scikit-learn, Logistic Regression, NumPy, Pandas, Flask-CORS",
+    tech: "Python, Flask, Scikit-learn, Logistic Regression, NumPy, Pandas",
     outcome: "Instant risk scoring + transparent predictions",
   },
   {
     title: "Health Assistant AI Chatbot (LLM Powered)",
-    desc: "A conversational AI assistant powered by OpenAI, integrated with Flask backend and a dynamic frontend. Features real-time chat, safety filtering, and a scalable API layer—ready for production healthcare assistant use cases.",
+    desc: "A conversational AI assistant powered by OpenAI, integrated with Flask backend and a dynamic frontend. Features real-time chat, safety filtering, and a scalable API layer.",
     image: "/projects/health-chatbot.png",
     live: "",
     code: "https://github.com/Sara-inam/DeveloperHub-Coperation/tree/main/health-chatbot",
-    tech: "Python, Flask, OpenAI API, LLM Integration, Flask-CORS, JavaScript, HTML, CSS, NLP",
+    tech: "Python, Flask, OpenAI API, LLM Integration, Flask-CORS, NLP",
     outcome: "24/7 automated patient query handling",
   },
 ];
 
-export default function Projects() {
+export default function ProjectsList() {
   return (
     <section
       id="projects"
       className="relative py-20 sm:py-24 lg:py-28 px-4 sm:px-6 lg:px-12 overflow-hidden bg-white"
     >
-      <div className="absolute w-72 sm:w-96 h-72 sm:h-96 bg-purple-100 rounded-full blur-3xl top-10 left-5 sm:left-10" />
-      <div className="absolute w-72 sm:w-96 h-72 sm:h-96 bg-purple-100 rounded-full blur-3xl bottom-10 right-5 sm:right-10" />
+      <div className="absolute w-72 h-72 bg-purple-100 rounded-full blur-3xl top-10 left-5 sm:left-10" />
+      <div className="absolute w-72 h-72 bg-purple-100 rounded-full blur-3xl bottom-10 right-5 sm:right-10" />
 
       <div className="max-w-7xl mx-auto relative z-10">
         <motion.h2
@@ -103,7 +94,7 @@ export default function Projects() {
           transition={{ duration: 0.6 }}
           className="text-3xl sm:text-4xl md:text-5xl font-black text-center mb-3 text-gray-900"
         >
-          Selected <span className="bg-gradient-to-r from-purple-600 to-purple-500 bg-clip-text text-transparent">Projects</span>
+          Latest <span className="bg-gradient-to-r from-purple-600 to-purple-400 bg-clip-text text-transparent">Projects</span>
         </motion.h2>
         <p className="text-gray-600 text-sm sm:text-base text-center max-w-2xl mx-auto mb-12 sm:mb-16">
           Work that delivered real value for businesses and end-users.
@@ -139,8 +130,7 @@ export default function Projects() {
                       Live
                     </a>
                   ) : (
-                    <span className="px-3 sm:px-4 py-2 text-xs sm:text-sm ">
-                    </span>
+                    <span className="px-3 sm:px-4 py-2 text-xs sm:text-sm" />
                   )}
                   <a
                     href={p.code}
@@ -163,7 +153,7 @@ export default function Projects() {
 
                 {p.outcome && (
                   <p className="text-[11px] sm:text-xs text-purple-600 mt-2 font-medium flex items-center gap-1.5">
-                    <span className="inline-block w-1.5 h-1.5 rounded-full bg-purple-500"></span>
+                    <span className="inline-block w-1.5 h-1.5 rounded-full bg-purple-500" />
                     {p.outcome}
                   </p>
                 )}
